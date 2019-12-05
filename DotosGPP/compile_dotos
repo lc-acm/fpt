@@ -1,0 +1,10 @@
+
+
+# g++  -c  -O1 -I/usr/X11R6/include  -I../Source  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+
+# g++  -c  -m32 -I/usr/X11R6/include  -I../Source  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+
+# g++  -c   -I/usr/X11R6/include -I../Source  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+
+g++  -c -I/usr/X11R6/include  -I../Source -I../HeadersGPP  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+

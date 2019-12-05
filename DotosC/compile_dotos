@@ -1,0 +1,9 @@
+
+
+# cc  -c  -O1  -I../Source  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+
+# cc  -c  -m32  -I../Source  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+
+# cc  -c  -I../Source  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c
+
+cc  -c -I/usr/X11R6/include  -I../Source -I../HeadersC  ../Source/Non_graphics.c  ../Source/G_graphics.c  ../Source/X_graphics.c

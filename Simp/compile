@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# The normal expectation is that all of this is installed in
+#          /FPT   
+# If not, you will have to edit this script to reflect where
+# you really installed it.
+
+
+cc -o simp.exe  -I/FPT/Source -I/FPT/HeadersC /FPT/DotosC/*.o    simp.c    -L/usr/X11R6/lib -lm -lX11 -lXext
+
+# this is essentially the same as "acom"  but for the one file only
+
+
+
+
+

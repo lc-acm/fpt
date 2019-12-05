@@ -1,0 +1,12 @@
+cd /FPT/DotosC
+./compile_dotos
+
+
+cd /FPT/DotosGPP
+./compile_dotos
+
+
+cd /FPT/FileProcessors
+./compile
+
+

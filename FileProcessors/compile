@@ -1,0 +1,4 @@
+cc -I/usr/X11R6/include  processing_tools.c  filter_arrays.c  -o   filter_arrays.exe
+
+cc -I/usr/X11R6/include  processing_tools.c  scom_processor.c  -o   scom_processor.exe
+

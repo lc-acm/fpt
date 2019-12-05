@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# The normal expectation is that all of this is installed in
+#          /FPT   
+# If not, you will have to edit this script to reflect where
+# you really installed it.
+
+
+
+/FPT/Simp/simp.exe  $1  tempcode387639.c  $2
+
+if [ $? -eq 0 ]
+then
+   echo "The simp stage WAS successful."
+else 
+   echo "The simp stage FAILED."
+   exit 1
+fi
+
+
+
+g++  -I/FPT/Source -I/FPT/HeadersGPP  /FPT/DotosGPP/*.o    tempcode387639.c    -L/usr/X11R6/lib -lm -lX11 -lXext
+
+
+
+
+
+
+# note that $? is the exit value of the last program that was run
+# usually, 0 is success, 1 is failure
+if [ $? -eq 0 ]
+then
+   rm tempcode387639.c
+   echo "g++ WAS successful."
+   echo "Executing the program..."
+   echo " "
+   ./a.out
+else 
+   rm tempcode387639.c
+   echo "g++ could NOT compile the program."
+   exit 1
+fi
+
+
+exit 0
+
+
+
+
+

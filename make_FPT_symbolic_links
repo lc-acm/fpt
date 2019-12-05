@@ -1,0 +1,14 @@
+
+
+ln -sf  /FPT/acom  /usr/local/bin/acom
+ln -sf  /FPT/bcom  /usr/local/bin/bcom
+ln -sf  /FPT/scom  /usr/local/bin/scom
+ln -sf  /FPT/ycom  /usr/local/bin/ycom
+ln -sf  /FPT/zcom  /usr/local/bin/zcom
+ln -sf  /FPT/Simp/runp   /usr/local/bin/runp
+
+
+
+
+
+

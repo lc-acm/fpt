@@ -1,12 +1,19 @@
-cd /FPT/DotosC
+
+prefix="/Users/glick/Desktop/fpt_test"
+
+cp -r fpt/ $prefix/
+
+cd $prefix/DotosC
 ./compile_dotos
 
 
-cd /FPT/DotosGPP
+cd $prefix/DotosGPP
 ./compile_dotos
 
 
-cd /FPT/FileProcessors
+cd $prefix/FileProcessors
 ./compile
+
+ln -sf  $prefix/acom  /usr/local/bin/acom
 
 

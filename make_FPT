@@ -23,6 +23,6 @@ echo -e "#!/bin/bash\nprefix='$prefix'\n$(cat $prefix/acom)" > $prefix/acom
 
 chmod +x $prefix/acom
 
-ln -sf  $prefix/acom  /usr/local/bin/acom
+sudo ln -sf  $prefix/acom  /usr/local/bin/acom
 
 

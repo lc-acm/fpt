@@ -1,3 +1,5 @@
+#~/bin/bash
+
 if [ -z "$1" ]
 then
       echo "Usage: ./make_fpt <PREFIX>"
@@ -24,5 +26,3 @@ echo -e "#!/bin/bash\nprefix='$prefix'\n$(cat $prefix/acom)" > $prefix/acom
 chmod +x $prefix/acom
 
 sudo ln -sf  $prefix/acom  /usr/local/bin/acom
-
-

@@ -18,4 +18,4 @@ done
 
 #echo $clist
 
-cc -I/usr/X11/include  -I$prefix/Source -I$prefixHeadersC $prefix/DotosC/*.o    $clist   -L/usr/X11/lib -lm -lX11 -lXext
+cc -I/usr/X11/include -I/opt/X11/include  -I$prefix/Source -I$prefixHeadersC $prefix/DotosC/*.o    $clist   -L/opt/X11/lib -L/usr/X11/lib -lm -lX11 -lXext

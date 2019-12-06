@@ -23,7 +23,7 @@ Go to [https://www.xquartz.org/](https://www.xquartz.org/), and download the `.D
 2. Obtain this copy of FPT. We recommend using the command `git clone https://github.com/lc-acm/fpt`.
 3. Navigate to FPT. If you've used the `git clone` command, you should be able to simply `cd fpt`.
 4. Decide where you'd like FPT to be installed. For Macs, we recommend `/Users/<yourusername>/fpt` and for Linux users we recommend `/home/<yourusername>/fpt`. You are free to install it anywhere else, of course, but make sure it's somewhere you have permissions to create files and directories.
-5. Make FPT. This is accomplished by running the command `./make_FPT <path-to-the-place-you-want-fpt-installed>`.
+5. Make FPT. This is accomplished by running the command `./make_FPT <path-to-the-place-you-want-fpt-installed>`. You will see several warning messages. This is fine, ignore them.
 6. Verify FPT. Run `which acom` and you should see something like `/usr/local/bin/acom`.
 7. You're done! Now, you should be able to run any of the included examples by compiling with `acom <example>`, and running `./a.out`. The examples are in the `<path to this directory>/fpt/Examples/` directory.
 8. Feel free to delete the directory containing this document and the `make_FPT` script. The script has created a new copy of the library.

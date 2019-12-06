@@ -1,5 +1,10 @@
+if [ -z "$1" ]
+then
+      echo "Usage: ./make_fpt <PREFIX>"
+      exit
+fi
 
-prefix="/Users/glick/Desktop/fpt_test"
+prefix=$1
 
 cp -r fpt/ $prefix/
 

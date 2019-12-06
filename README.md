@@ -27,3 +27,5 @@ Go to [https://www.xquartz.org/](https://www.xquartz.org/), and download the `.D
 6. Verify FPT. Run `which acom` and you should see something like `/usr/local/bin/acom`.
 7. You're done! Now, you should be able to run any of the included examples by compiling with `acom <example>`, and running `./a.out`. The examples are in the `<path to this directory>/fpt/Examples/` directory.
 8. Feel free to delete the directory containing this document and the `make_FPT` script. The script has created a new copy of the library.
+
+If you find that you need help, feel free to reach out to <lcacmchapter@gmail.com> or stop by CSpace.

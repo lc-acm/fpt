@@ -1,21 +1,30 @@
-# fpt
-the OFFICIAL version of Jeff Ely's Freshman's Programming Toolkit
+# FPT
+The official version of Jeff Ely's Freshman Programming Toolkit
 
 ## What is this?
 
-In CS 171 (Computer Science I) and CS 377/477 (Graphics/Advanced Graphics), there is at least a portion which requires use of Jeff Ely's "Freshman's Programming Toolkit (fpt)." FPT is a graphics library which uses X11 to allow C-based graphical function on most operating systems. 
+In CS 171 (Computer Science I) and CS 377/477 (Graphics/Advanced Graphics), there is at least a portion which requires use of Jeff Ely's "Freshman Programming Toolkit (FPT)." FPT is a graphics library that uses X11 to allow C-based graphical function on most operating systems. 
 
 There have been several different versions of FPT floating around on GitHub for quite some time now, and the Lewis & Clark ACM Student Chapter has decided to curate one for easy installation.
 
 ## How do I install this?
 
-If you are using a Mac, read both sections. If you are using a Linux system, skip to "Installing FPT." If you are using Windows, you may need to install a Linux virtual machine and then follow the Linux instructions.
+Follow the specific steps for you operating system and then read "Installing FPT."
 
-### Installing X11
+### Mac-specific steps
 
 MacOS used to include X11, but stopped doing so in the mid 2010s. Luckily, there is an open-source project called XQuartz which maintains a Mac-compatible build of X11.
 
-Go to [https://www.xquartz.org/](https://www.xquartz.org/), and download the `.DMG` image for the latest version of XQuartz. When it finishes downloading install it and verify the installation by launching the `XQuartz` app.
+Go to [https://www.xquartz.org/](https://www.xquartz.org/), and download the `.DMG` image for the latest version of XQuartz. When it finishes downloading, install it and verify the installation by launching the `XQuartz` app.
+
+### Windows-specific steps
+
+1. [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+2. [Install Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6).
+3. Install X11 dependencies with `sudo apt-get install libx11-dev libxext-dev`.
+4. Install [Xming](https://sourceforge.net/projects/xming/) and [Xming fonts](https://sourceforge.net/projects/xming/files/Xming-fonts/).
+
+Everytime you want to run a graphical program, you will need to have run `export DISPLAY=:0` in the terminal and launched Xming.
 
 ### Installing FPT
 
